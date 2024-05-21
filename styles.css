@@ -1,0 +1,397 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #131d1f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #131d1f;
+    color: #fff;
+    text-align:center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Header Styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Custom Styles */
+.custom-h1 {
+    position: relative;
+    width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 50px;    
+    padding: 3rem 10rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: url('https://images.unsplash.com/photo-1605379399642-870262d3d051?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDI%3D');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.custom-h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.image-container {
+    text-align: left;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.course a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.course img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.course h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #555;
+}
+
+section ul {
+    list-style-type:georgian;
+    padding: 10px;
+    color: #555;
+    font-size: 1.1rem;    
+}
+
+/* Form Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.signup-form {
+    background-color: #00bcd4; /* Light blue accent */
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF; /* Light blue accent */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #585c58; /* Darker shade of light blue accent */
+}
+
+.signin-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.signin-container p {
+    font-size: 1rem;
+}
+
+.signin-container a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.signin-container a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    float: left;
+    width: 25%;
+    margin-right: 30px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sub-category-list {
+    padding-left: 20px;
+}
+
+.sub-category-list li {
+    list-style-type: circle;
+}
+
+/* Course Content Styles */
+.course-content {
+    float: left;
+    width: 70%;
+}
+
+.course-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.course-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.course-box img {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.course-info {
+    flex: 1;
+    margin-bottom: 80px;
+}
+
+.course-info h3 {
+    font-size: 1.2rem;
+}
+
+.course-info p {
+    margin-bottom: 10px;
+}
+
+.course-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.course-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-bottom: 50px;    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Contact Information Styles */
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info-image {   
+    width: 100px;
+    height: 50px;    
+    margin-bottom: 10px;
+}
